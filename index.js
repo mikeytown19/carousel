@@ -9,7 +9,7 @@ function renderGalleryItem(randomNumber){
     let galleryItem = document.createElement('li');
     galleryItem.classList.add('carousel__slide');
     galleryItem.innerHTML = `
-      <img class="carousel__slide" src="${response.url}" alt="gallery image"/>
+      <img src="${response.url}" alt="gallery image"/>
     `
     document.querySelector('ul').appendChild(galleryItem);
   })
