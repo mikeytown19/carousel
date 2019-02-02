@@ -10,12 +10,22 @@
 <body>
 
   <div class="carousel">
-    <button class="carousel__button carousel__button--left">
+    <button class="carousel__button carousel__button--left is-hidden">
       <img src="img/left.svg" alt=""/>
     </button>
     <div class="carousel__track-container">
       <ul class="carousel__track">
         <!-- i am adding the <li/> elements through JS  -->
+      <li  class="carousel__slide current-slide">
+        <img class="carousel__image" src="https://source.unsplash.com/random" alt="gallery image"/>
+      </li>
+      <li  class="carousel__slide">
+        <img class="carousel__image"src="https://source.unsplash.com/user/erondu" alt="gallery image"/>
+      </li>
+      <li  class="carousel__slide">
+        <img class="carousel__image"src="https://source.unsplash.com/daily" alt="gallery image"/>
+      </li>
+
 
       </ul>
     </div>

@@ -13,7 +13,7 @@
 
 .carousel__track-container {
   background: teal;
-
+  overflow: hidden;
   height: 100%;
   position: relative;
 }
@@ -22,6 +22,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
 }
 
 .carousel__slide {
@@ -56,6 +59,7 @@
 
 .carousel__nav {
 
+
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -68,8 +72,13 @@
   height: 15px;
   background: rgba(0,0,0,.3);
   margin: 10px;
+  cursor: pointer;
 }
 
 .carousel__indicator.current-slide {
   background: rgba(0,0,0,.8);
+}
+
+.is-hidden {
+  display: none;
 }
